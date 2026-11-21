@@ -14,6 +14,7 @@ This can lead to a complete domain compromise, especially if the attacker retrie
 
 ## Step 1 : check for replication priveleges 
 In this example, an ordinary domain user has replication privileges, representing a serious Active Directory misconfiguration.
+
 <img width="1110" height="338" alt="image" src="https://github.com/user-attachments/assets/fa0799ee-a9d3-4a20-9ccf-d75d680dec36" />
 
 ## Step 2 : perform the attack using impacket-secretsdump
@@ -26,6 +27,7 @@ impacket-secretsdump domain.com/username@DC ip -outputfile dcsyn.txt
 results:
 
 retreiving all the hashes from the dc without touching it or attacking ntds.dit, a simple account with hight privelages can lead to a full domain compromise, those hashes can be used for other attacks such as golden ticket targeting the krbtgt account, or pass-the-hash
+
 <img width="800" height="330" alt="image" src="https://github.com/user-attachments/assets/af2d6d41-5fd1-4108-b1c0-5dd3919a0950" />
 
 Key Takeaway: 
