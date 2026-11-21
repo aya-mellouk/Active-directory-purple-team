@@ -7,6 +7,7 @@ To perform a DCSync attack, an account must have the appropriate directory repli
 - Replicating Directory Changes
 - Replicating Directory Changes All
 - Replicating Directory Changes In Filtered Set (required in certain scenarios, particularly when retrieving specific filtered attributes).
+
 By default, these permissions are generally assigned to highly privileged groups, such as Domain Admins and Enterprise Admins.
 However, if these permissions are mistakenly granted to an ordinary domain user or compromised account, an attacker can abuse them to request password hashes from the Domain Controller.
 This can lead to a complete domain compromise, especially if the attacker retrieves the krbtgt account hash, which can be used to forge Kerberos Golden Tickets and establish persistence.
