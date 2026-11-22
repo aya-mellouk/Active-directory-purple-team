@@ -16,8 +16,8 @@ crackmapexec smb 192.168.75.162 -u users.txt -d tsuquiat.local -p password.txt -
 <img width="777" height="112" alt="image" src="https://github.com/user-attachments/assets/c9e9bc9e-7064-48e6-b339-1bba96b37be1" />
 
 ## Key takeaways
--This attack succeeded based on the following conditions:
- -Weak/absent lockout policy : no effective threshold or lockout window, so all accounts could be tested without triggering a block.
- -Predictable, shared, or default passwords : 4 accounts share the identical password ncc1701.
- -No MFA : password alone was sufficient to authenticate.
- -Valid, enumerable username list : users.txt gave full coverage of domain accounts to target.
+This attack succeeded based on the following conditions:
+ - Weak/absent lockout policy : no effective threshold or lockout window, so all accounts could be tested without triggering a block.
+ - Predictable, shared, or default passwords : 4 accounts share the identical password ncc1701.
+ - No MFA : password alone was sufficient to authenticate.
+ - Valid, enumerable username list : users.txt gave full coverage of domain accounts to target.
